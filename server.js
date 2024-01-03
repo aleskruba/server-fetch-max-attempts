@@ -37,7 +37,7 @@ app.get('/', async (req, res) => {
   
     if (fetchAttempts[userId] <= MAX_FETCH_ATTEMPTS) {
     if (
-      xRapidAPIKey === 'e62712017amsh8dbea7c9f8dfe4ep1f5a4cjsn765abaa65463'
+      xRapidAPIKey === KEY
     ) {
       try {
         const products = await Product.find();
